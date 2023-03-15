@@ -1,18 +1,21 @@
 import React from 'react';
 import './Navbar.css';
-import logo from '../images/Logo.jpg';
+import logo from '../images/logo.png';
 
 const Navbar = () => {
     return (
-        <nav className="navbar">
+        <nav className="header">
       <div className="banner-content">
         <div className="banner-image">
-        <img src={logo} className="logo" alt="LOGO IMAGE"/>
-
+        <img src={logo} className="logo" alt=""/>
+        <button type="button" className="btn btn-outline-warning">Sign up</button>
+        <button type="button" className="btn btn-outline-warning">Sign in</button>
         </div>
-        <button type="button" className="btn btn-danger">Sign in</button>
-        <button type="button" className="btn btn-outline-danger">Sign up</button>
-      </div>
+       <div className="banner">
+        <h1> STREET FOOD DISCOVERY </h1>
+        <p className="text">Discover all the delicious local streetfood</p>
+       </div>
+       </div>
         </nav>
     )
 }

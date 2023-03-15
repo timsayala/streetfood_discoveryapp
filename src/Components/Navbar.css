@@ -1,14 +1,42 @@
-<<<<<<< HEAD
-.logo {
-    height: 50px;
-    width: auto;
-  }
-=======
 html,body {
 margin: 0;
+font-family: cursive
 }
 
-.navbar {
-    background-color: aliceblue;
+.header {
+    background-color: #c0392b;
+    height: 6rem;
+
 }
->>>>>>> 2c0ac49f05236fb6d6c5fcb8ec7f51ba97dc3425
+.logo {
+  height: 6rem;
+  width: auto;
+}
+.btn {
+  float: right;
+  margin: 0.2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.banner{
+background-image: url("../images/banner.png");
+background-size: cover;
+background-position: top;
+ width: 100%;
+ height: 30rem;
+ margin-bottom: 100rem;
+ position: fixed;
+}
+.text {
+font-size: 40px;
+text-align: center;
+margin-top: 1rem;
+color: #473C33;
+}
+h1 {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 6rem;
+  color: #282A3A;
+}
