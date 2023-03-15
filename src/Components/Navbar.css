@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 .logo {
     height: 50px;
     width: auto;
   }
+=======
+html,body {
+margin: 0;
+}
+
+.navbar {
+    background-color: aliceblue;
+}
+>>>>>>> 2c0ac49f05236fb6d6c5fcb8ec7f51ba97dc3425

@@ -10,8 +10,8 @@ const Navbar = () => {
         <img src={logo} className="logo" alt="LOGO IMAGE"/>
 
         </div>
-        <button>Sign in</button>
-        <button>Sign up</button>
+        <button type="button" className="btn btn-danger">Sign in</button>
+        <button type="button" className="btn btn-outline-danger">Sign up</button>
       </div>
         </nav>
     )
