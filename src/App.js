@@ -1,13 +1,12 @@
 import './App.css';
 import Navbar from './Components/Navbar';
-import Search from './Components/Search';
+import Flipcard from './Components/Flipcard';
 
 function App() {
   return (
     <div>
    <Navbar />
-
-   <Search />
+   <Flipcard />
    </div>
   );
 }

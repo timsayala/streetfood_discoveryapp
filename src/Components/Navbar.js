@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import logo from '../images/logo.png';
+import Hero from '../images/Hero.png';
 
 const Navbar = () => {
     return (
@@ -12,7 +13,7 @@ const Navbar = () => {
         <button type="button" className="btn btn-outline-warning">Sign in</button>
         </div>
        <div className="banner">
-        <h1> STREET FOOD DISCOVERY </h1>
+       <img src={Hero} className="hero" alt=""/>
         <p className="text">Discover all the delicious local streetfood</p>
        </div>
        </div>
