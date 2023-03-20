@@ -1,0 +1,18 @@
+[
+      {    
+    "id": 1, 
+   "imageSrc": "/Images/street-food-while-in-philippines.jpg",    
+   "imageAlt": "Image 1 alt text",  
+    "description": "Isaw is a popular street food in the Philippines that consists of grilled chicken intestines on skewers. It is usually marinated in a mixture of soy sauce, vinegar, and various spices before being grilled over charcoal. Isaw is often sold by street vendors who set up small stalls or pushcarts along busy streets and markets. It is typically served with a dipping sauce made from vinegar, chili, and onions. Despite its humble origins, isaw has become a beloved snack among Filipinos and has even gained a following in other parts of the world." 
+    }, 
+     {   
+    "id": 2,   
+    "imageSrc": "/Images/filipino-street-food-eggs.jpg",  
+    "imageAlt": "Image 2 alt text",   
+     "description": "Description text 2"  
+    }, 
+    {    "id": 3,   
+        "imageSrc": "/Images/14.jpeg",   
+        "imageAlt": "Image 3 alt text",  
+        "description": "Description text 3" 
+         }]
