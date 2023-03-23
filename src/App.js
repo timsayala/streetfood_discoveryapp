@@ -1,34 +1,18 @@
-import './App.css';
-import Navbar from './Components/Navbar';
-
-import Banner from './Components/Banner';
-import Search from './Components/Search';
-import Card from './Components/Card';
-import cardData from './Components/cardData.json';
-import Footer from './Components/Footer';
-import './App.css';
-
+import React from 'react';
+import Home from './Components/pages/Home';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import AboutUs from './Components/pages/AboutUs';
+import Contact from './Components/pages/Contact';
 
 function App() {
   return (
-    <div>
-   <Navbar />
-
-   <Banner />
-   
-< Search/>
-<div className="card-container">
-      {cardData.map((card) => (
-        <Card
-          key={card.id}
-          imageSrc={card.imageSrc}
-          imageAlt={card.imageAlt}
-          description={card.description}
-        />
-      ))}
-    </div>
-    <Footer />
-   </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 

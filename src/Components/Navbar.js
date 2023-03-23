@@ -10,8 +10,9 @@ const Navbar = () => {
           <img src={logo} className="logo" alt="logo" />
         </a>
         <ul className="navbar-links">
-          <li>About Us</li>
-          <li>Contact</li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/aboutUs">About Us</a></li>
+          <li><a href="/contact">Contact</a></li>
           <div className="navbar-buttons">
             <button type="button" className="btn btn-outline-warning">
               Sign up
@@ -25,5 +26,6 @@ const Navbar = () => {
     </nav>
   );
 };
+
 
 export default Navbar;

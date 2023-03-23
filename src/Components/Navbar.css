@@ -97,3 +97,15 @@ nav li:hover {
   color: white;
 }
 
+.navbar-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: large;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-links li a:hover{
+  color: #f2b138;
+  transition:0.4s;
+}

@@ -3,16 +3,49 @@
     "id": 1, 
    "imageSrc": "/Images/street-food-while-in-philippines.jpg",    
    "imageAlt": "Image 1 alt text",  
-    "description": "Isaw is a popular street food in the Philippines that consists of grilled chicken intestines on skewers. It is usually marinated in a mixture of soy sauce, vinegar, and various spices before being grilled over charcoal. Isaw is often sold by street vendors who set up small stalls or pushcarts along busy streets and markets. It is typically served with a dipping sauce made from vinegar, chili, and onions. Despite its humble origins, isaw has become a beloved snack among Filipinos and has even gained a following in other parts of the world." 
+    "description": "chicken or pork intestines that are cleaned, boiled, and then grilled on skewers." 
     }, 
      {   
     "id": 2,   
     "imageSrc": "/Images/filipino-street-food-eggs.jpg",  
     "imageAlt": "Image 2 alt text",   
-     "description": "Description text 2"  
+     "description": "hard-boiled quail eggs that are coated in orange batter and deep-fried."  
     }, 
     {    "id": 3,   
         "imageSrc": "/Images/14.jpeg",   
         "imageAlt": "Image 3 alt text",  
-        "description": "Description text 3" 
-         }]
+        "description": "grilled chicken or pork blood that is cut into rectangular shapes and skewered" 
+    },
+    {    "id": 4,   
+        "imageSrc": "/Images/Balut-in-Vietnam-1.jpeg",   
+        "imageAlt": "Image 3 alt text",  
+        "description": "fertilized duck egg with partially developed embryo inside, boiled and eaten with salt and vinegar." 
+    },
+    {    "id": 5,   
+        "imageSrc": "/Images/1.jpg",   
+        "imageAlt": "Image 3 alt text",  
+        "description": "grilled chicken head that is usually served with a spicy vinegar dip" 
+    },
+    {    "id": 6,   
+        "imageSrc": "/Images/s.jpg",   
+        "imageAlt": "Image 3 alt text",  
+        "description": "a dish made from pig's head and liver that is chopped, seasoned, and served on a sizzling plate." 
+    },
+    {    "id": 7,   
+        "imageSrc": "/Images/b.jpg",   
+        "imageAlt": "Image 3 alt text",  
+        "description": "skewered ripe plantains that are caramelized in brown sugar and served hot." 
+    },
+    {    "id": 8,   
+        "imageSrc": "/Images/t.jpg",   
+        "imageAlt": "Image 3 alt text",  
+        "description": "sweet banana rolls that are wrapped in spring roll wrappers and fried until crispy." 
+    },
+    {    "id": 9,   
+        "imageSrc": "/Images/c.jpg",   
+        "imageAlt": "Image 3 alt text",  
+        "description": "crispy fried pork rinds that are usually served as a snack or a topping for dishes." 
+    }
+        
+         
+]
