@@ -1,15 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-
-
+import { GoogleMap, LoadScript, Autocomplete } from '@react-google-maps/api';
 import './Search.css';
+
+const mapContainerStyle = {
+  width: '100%',
+  height: '400px'
+};
+
+const defaultCenter = {
+  lat: 	14.599512,
+  lng: 120.984222
+};
 
 const Search = () => {
   const [selectedLocation, setSelectedLocation] = useState('');
+  const [autocomplete, setAutocomplete] = useState(null);
+  const autocompleteRef = useRef(null);
 
-  const handleLocationSelect = (e) => {
-    setSelectedLocation(e.target.dataset.value);
+  const handleLocationSelect = () => {
+    if (autocomplete !== null) {
+      setSelectedLocation(autocomplete.getPlace().formatted_address);
+      autocompleteRef.current.value = '';
+    }
   };
 
   const handleSearch = () => {
@@ -17,64 +31,33 @@ const Search = () => {
     // You can add code to fetch data based on the selected location and update the UI
   };
 
+  const onLoad = (autocomplete) => {
+    setAutocomplete(autocomplete);
+  };
+
   return (
     <div className="search-container">
-      <input type="text" id="search-input" placeholder="Enter a location" />
-      <div className="dropdown">
-        <button
-          className="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdown-btn"
-          data-bs-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
+      <LoadScript googleMapsApiKey="AIzaSyDTp2f9HVNelrFnwoVGqvW6ePPzxlT_iQo" libraries={['places']}>
+        <GoogleMap mapContainerStyle={mapContainerStyle} zoom={13} center={defaultCenter} />
+        <Autocomplete
+          onLoad={onLoad}
+          onPlaceChanged={handleLocationSelect}
         >
-          {selectedLocation ? selectedLocation : 'Select a location'}
-        </button>
-        <div className="dropdown-menu" aria-labelledby="dropdown-btn">
-          <a
-            className="dropdown-item"
-            href="#"
-            data-value="New York"
-            onClick={handleLocationSelect}
-          >
-            New York
-          </a>
-          <a
-            className="dropdown-item"
-            href="#"
-            data-value="Los Angeles"
-            onClick={handleLocationSelect}
-          >
-            Los Angeles
-          </a>
-          <a
-            className="dropdown-item"
-            href="#"
-            data-value="Chicago"
-            onClick={handleLocationSelect}
-          >
-            Chicago
-          </a>
-          <a
-            className="dropdown-item"
-            href="#"
-            data-value="Houston"
-            onClick={handleLocationSelect}
-          >
-            Houston
-          </a>
-          <a
-            className="dropdown-item"
-            href="#"
-            data-value="Miami"
-            onClick={handleLocationSelect}
-          >
-            Miami
-          </a>
-        </div>
-      </div>
-      <button type="button" id="search-btn" className="btn btn-primary" onClick={handleSearch}>
+          <input
+            type="text"
+            placeholder="Enter a location"
+            className="form-control"
+            ref={autocompleteRef}
+          />
+        </Autocomplete>
+      </LoadScript>
+      <button
+        type="button"
+        id="search-btn"
+        className="btn btn-primary"
+        onClick={handleSearch}
+        disabled={!selectedLocation}
+      >
         Search
       </button>
     </div>
