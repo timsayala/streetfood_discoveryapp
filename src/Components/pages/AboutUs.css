@@ -1,0 +1,30 @@
+.png{
+    width: 300px;
+}
+
+div.row.d-flex.align-items-center{
+    margin-bottom: 200px;
+    padding: 100px;
+}
+
+.col{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+p{
+    line-height: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+
