@@ -5,9 +5,23 @@ div.container.contact{
     margin-top: 50px;
     border-radius: 20px;
     margin-bottom: 50px;
+    border-bottom: 10px solid #c69c5d;
+    border-left: 10px solid #c69c5d;
+    box-shadow: 0 20px 30px  2px #c69c5d;
+
 }
 
 h3{
-    padding-top: 20px;
+    padding-top: 10px;
+    color: #c69c5d;
+    font-weight: 1000;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
+.contactpng{
+    width: 250px;
+    height: 600px
+
+}
