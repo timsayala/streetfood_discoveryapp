@@ -10,7 +10,7 @@ const mapContainerStyle = {
 };
 
 const defaultCenter = {
-  lat: 	14.599512,
+  lat: 14.599512,
   lng: 120.984222
 };
 
@@ -28,7 +28,9 @@ const Search = () => {
 
   const handleSearch = () => {
     console.log('Search clicked with location:', selectedLocation);
-    // You can add code to fetch data based on the selected location and update the UI
+    
+    // For example, you can display the selected location in a message
+    alert(`Searching for ${selectedLocation}`);
   };
 
   const onLoad = (autocomplete) => {
@@ -64,4 +66,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default Search;
